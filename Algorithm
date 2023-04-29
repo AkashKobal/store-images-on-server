@@ -1,0 +1,24 @@
+import PIL
+import OS import
+Target_dir should be "Image-Folder/" if "submit" is included in the request.form.
+ target_file = request.files["fileToUpload"] + target_dir + secure_filename.image_file_type = 
+os.path.splitext(target_file)[1] filename) upload_ok = 1.lower()
+ # If requested, determine whether an image file contains a real image or a false 
+image.files["fileToUpload"].filename!= "": if Image is not present.print("File is not an image.") after 
+opening the stream returned by request.files["fileToUpload"].
+ 0 for upload_ok
+# Verify the existence of the file if os.path.isfile(target_file):
+ "Sorry, file already exists."
+ 0 for upload_ok
+ 500 kilobytes, or 500,000 bytes, is the recommended file size to check.
+ if asked.files["fileToUpload"].length_of_content > 500000:
+ print ("Sorry, your file is too large.")
+ 0 for upload_ok
+ # Accept some file types if image_file_type is not one of ".jpg", ".png", ".jpeg", or ".gif":
+ Only JPG, JPEG, PNG, and GIF files are permitted, we're sorry.
+ 0 for upload_ok
+ # If upload_ok == 0, see if an error has set upload_ok to 0:
+ print ("Sorry, your file was not uploaded.")
+ any other case: request.files["fileToUpload"].save(target_file)
+ The requested file (request.files['fileToUpload'].filename) has been uploaded, according to 
+print(f)
